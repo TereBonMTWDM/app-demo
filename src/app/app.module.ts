@@ -2,6 +2,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 // components:
 import { AppComponent } from './app.component';
@@ -15,6 +16,8 @@ import { ProductComponent } from './pages/product/product.component';
 import { AppRoutingModule } from './app.routes';
 import { DocsComponent } from './pages/docs/docs.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { CoberturaComponent } from './pages/cobertura/cobertura.component';
+import { BusquedaComponent } from './pages/busqueda/busqueda.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +28,15 @@ import { ContactComponent } from './pages/contact/contact.component';
     AboutComponent,
     ProductComponent,
     DocsComponent,
-    ContactComponent
+    ContactComponent,
+    CoberturaComponent,
+    BusquedaComponent
   ],
   imports: [
     BrowserModule,
     RouterModule,
-    AppRoutingModule // archivo de rutas
+    AppRoutingModule, // archivo de rutas
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

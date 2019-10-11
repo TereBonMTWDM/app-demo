@@ -1,0 +1,14 @@
+<div class="card-columns">
+
+    <div class="card" *ngFor="let item of paisesList">
+      <!-- <img src="{{item.flag}}" class="card-img-top"> -->
+      <img [src]="item.flag" class="card-img-top" height="100px" width="80px">
+      <div class="card-body">
+        <h5 class="card-title">{{item.name}}</h5>
+        <p class="card-text">{{item.demonym}}</p>
+        <p class="card-text">
+          Población:
+          <small class="text-muted">{{item.population | number}}</small></p>
+      </div>
+    </div>
+  </div>

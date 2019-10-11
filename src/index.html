@@ -8,12 +8,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 
+  <!-- Bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- /Bootstrap-->
   <!-- estilos del template URKO-->
   <link rel="icon" type="image/svg+xml" href="assets/img/urku-ico.svg">
   <link rel="stylesheet" href="assets/css/aurora-pack.min.css">
   <link rel="stylesheet" href="assets/css/aurora-theme-base.min.css">
   <link rel="stylesheet" href="assets/css/urku.css">
   <!--/estilos del template URKO-->
+
 </head>
 <body class="top-fixed">
   <app-root></app-root>
@@ -83,9 +87,9 @@
          if(map.getZoom() > 15) { map.setZoom(15) } else { map.setZoom(level) }
       }
 
-      document.querySelector('#map-arrow').addEventListener('click', function() {
-        newLocation(Math.round(Math.random()*10) + 13);
-      }, false);
+      // document.querySelector('#map-arrow').addEventListener('click', function() {
+      //   newLocation(Math.round(Math.random()*10) + 13);
+      // }, false);
     </script>
     <!--/documentation-->
 
@@ -94,7 +98,7 @@
     <script>svg4everybody();</script>
     <script src="assets/js/main.min.js"></script>
     <script src="assets/js/pe-navscroll.min.js"></script>
-    <script>
+    <!-- <script>
       /// navScroll init
       peNavScroll.init({
         nav:'.rk-navigation',
@@ -107,13 +111,13 @@
       });
 
       //- Select Code
-      var pres = document.querySelectorAll('pre');
-      [].slice.call(pres).forEach(function(elem, index){
-        pres[index].addEventListener('click', function(){
-          SelectText(this)
-        })
-      })
-    </script>
+      // var pres = document.querySelectorAll('pre');
+      // [].slice.call(pres).forEach(function(elem, index){
+      //   pres[index].addEventListener('click', function(){
+      //     SelectText(this)
+      //   })
+      // })
+    </script> -->
 
     <!--/docs-->
 
@@ -177,9 +181,9 @@
          if(map.getZoom() > 15) { map.setZoom(15) } else { map.setZoom(level) }
       }
 
-      document.querySelector('#map-arrow').addEventListener('click', function() {
-        newLocation(Math.round(Math.random()*10) + 13);
-      }, false);
+      // document.querySelector('#map-arrow').addEventListener('click', function() {
+      //   newLocation(Math.round(Math.random()*10) + 13);
+      // }, false);
     </script>
     <!--/contact-->
 </body>
